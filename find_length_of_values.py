@@ -6,4 +6,15 @@ def find_length_of_values(data: dict) -> int:
     Returns:
         int: The sum of the length of all values in the dictionary.
     """
-    pass
+    count = 0
+    for i in data:
+        for j in i.values():
+            count += len(str(j))
+    return count
+data = [
+    {'name ': 'John', 'job': 'Developer', 'age': 50},
+    {'name ': 'Mary', 'job': 'Developer', 'age': 30},
+    {'name ': 'Bary', 'job': 'Student', 'age': 50},
+    {'name ': 'Golib', 'job': 'Snayper', 'age': 60},
+]
+print(find_length_of_values(data))
