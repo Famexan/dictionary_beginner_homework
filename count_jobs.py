@@ -9,9 +9,9 @@ def count_jobs(data:list, job:str) -> int:
     """
     count = 0
     for i in data:
-        for j in i.values():2
-        count += 1
-            
+        for j in i.values():
+            if j == x:
+                count += 1 
     return count
 
 data = [
